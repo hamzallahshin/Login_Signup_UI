@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#16414E"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/atomic_age"
+        android:paddingLeft="135dp"
+        android:text="LOG IN !"
+        android:textColor="#EDCB00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+        <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:padding="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="UserName"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:startIconDrawable="@drawable/emaillogo"
+            app:boxBackgroundColor="#98921B"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/outline_lock_black_24dp"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true"
+            app:boxBackgroundColor="#98921B"
+            app:hintTextColor="@color/black"
+            app:boxStrokeErrorColor="@color/white"
+            app:boxStrokeColor="@color/black"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/GoButton"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:text="LOG IN"
+        android:onClick="LoginUser"
+        android:background="@drawable/buttonstyle"
+        android:textColor="#FFE500"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonstyle"
+        android:text="CREATE NEW ACCOUNT"
+        android:textColor="#FFE500"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/forgotTExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/atomic_age"
+        android:paddingLeft="100dp"
+        android:text="FORGOT PASSWORD!"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+</LinearLayout>
